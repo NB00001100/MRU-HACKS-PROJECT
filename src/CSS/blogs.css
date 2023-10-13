@@ -1,3 +1,6 @@
+@import url(./palette.css);
+
+/* Reset some default styles for consistency */
 body, h1, h2, p, a {
     margin: 0;
     padding: 0;
@@ -5,25 +8,25 @@ body, h1, h2, p, a {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #FEFAE0; /* Background color */
+    background-color: var(--celadon); /* Background color */
 }
 
 header {
-    background-color: #606C38; /* Green header background color */
-    color: #FEFAE0; /* White text color */
+    background-color: var(--mint); /* Green header background color */
+    color: var(--caribbean-current); /* White text color */
     text-align: center;
     padding: 20px 0;
 }
 
 nav {
-    background-color: #BC6C25; /* Dark background for the navigation */
-    color: #FEFAE0; /* White text color */
+    background-color: var(--zomp); /* Dark background for the navigation */
+    color: var(--caribbean-current); /* White text color */
     padding: 10px;
     text-align: center;
 }
 
 nav a {
-    color: #FEFAE0; /* White text color for navigation links */
+    color: var(--caribbean-current); /* White text color for navigation links */
     text-decoration: none;
     margin: 0 10px;
 }
@@ -32,13 +35,35 @@ main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #FEFAE0; /* Content background color */
+    background-color: var(--celadon-2); /* Content background color */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+    width: 70%;
+    padding: 5px;
+    border: 1px solid var(--zomp);
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-bar button {
+    background-color: var(--zomp); /* Button background color */
+    color: var(--caribbean-current); /* White text color for the button */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .blog-post {
     margin-bottom: 20px;
-    border: 1px solid #DDA15E; /* Blog post border color */
+    border: 1px solid var(--mint-2); /* Blog post border color */
     padding: 10px;
 }
 
@@ -49,16 +74,6 @@ main {
 
 .blog-post p {
     font-size: 14px;
-    color: #777;
+    color: var(--skobeloff); /* Text color for blog post content */
     margin: 5px 0;
-}
-
-.blog-post a {
-    display: inline-block;
-    background-color: #606C38; /* Green button background color */
-    color: #FEFAE0; /* White text color for the button */
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-top: 10px;
 }
