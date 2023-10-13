@@ -1,0 +1,55 @@
+/* Reset some default styles for consistency */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FEFAE0; /* Background color */
+}
+
+header {
+    background-color: #606C38; /* Green header background color */
+    color: #FEFAE0; /* White text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #BC6C25; /* Dark background for the navigation */
+    color: #FEFAE0; /* White text color */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #FEFAE0; /* White text color for navigation links */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FEFAE0; /* Content background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post {
+    margin-bottom: 20px;
+    border: 1px solid #DDA15E; /* Blog post border color */
+    padding: 10px;
+}
+
+.blog-post h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.blog-post p {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0;
+}
