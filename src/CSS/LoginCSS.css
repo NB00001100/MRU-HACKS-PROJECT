@@ -1,0 +1,41 @@
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #99E2B4;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #99E2B4, #88D4AB, #78C6A3, #67B99A, #56AB91, #469D89, #358F80, #358F80, #248277, #248277);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #99E2B4, #88D4AB, #78C6A3, #67B99A, #56AB91, #469D89, #358F80, #358F80, #248277, #248277);
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}
+
+.col-lg-6{
+    background-color: #051726;
+}
+.card rounded-3 text-black{
+    background-color: #99e2b4ff;
+}
+
+p{
+    color: #fff;
+}
+
+h4{
+    color: #fff;
+}
+.loginBTN{
+    margin-left: 10px;
+}
