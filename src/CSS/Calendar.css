@@ -1,4 +1,6 @@
 /* Code modified from https://codepen.io/jpag82/pen/Nazayx */
+
+@import url(./palette.css);
 @font-face {
   font-family: 'Lato';
   font-style: italic;
@@ -64,7 +66,7 @@ body.overlay:before {
 }
 html {
   height: 100%;
-  background: #99e2b4ff;
+  background-color: var(--mint);
   color: #ffffff;
   font-size: 13px;
   font-family: 'Lato', sans-serif;
@@ -117,7 +119,7 @@ header {
   height: 80px;
   width: 100%;
   z-index: 50;
-  background: #003567;
+  background-color: var(--mint);
 }
 header > .wrapper {
   display: flex;
@@ -204,7 +206,7 @@ header > .wrapper a {
   width: 30px;
   height: 30px;
   padding: 9px 12px;
-  background-color: #004b8f;
+  background-color: var(--zomp);
   cursor: pointer;
   z-index: 10;
   box-sizing: border-box;
@@ -232,14 +234,14 @@ header > .wrapper a {
 }
 .c-month .prev:hover {
   padding: 9px 10px;
-  background-color: #0055a4;
+  background-color: var(--skobeloff);
 }
 .c-month .next {
   right: 0;
 }
 .c-month .next:hover {
   padding: 9px 14px;
-  background-color: #0055a4;
+  background-color: var(--skobeloff);
 }
 .c-paginator__year {
   height: 80px;
@@ -251,7 +253,7 @@ header > .wrapper a {
   padding: 0 10px;
   line-height: 30px;
   height: 30px;
-  background-color: #004b8f;
+  background-color: var(--zomp);
   text-transform: uppercase;
   letter-spacing: 2px;
   border-radius: 15px;
@@ -271,7 +273,7 @@ header > .wrapper a {
   margin-left: 10px;
 }
 .o-btn:hover {
-  background-color: #0055a4;
+  background-color: var(--skobeloff);
 }
 .c-calendar {
   padding-top: 80px;
@@ -280,7 +282,7 @@ header > .wrapper a {
   flex-direction: row;
 }
 .c-calendar__style {
-  background-color: #00407b;
+  background-color: var(--caribbean-current);
   margin: 20px;
   padding: 10px;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.18);
@@ -405,13 +407,13 @@ header > .wrapper a {
   background: #003b71;
 }
 .c-cal__cel.isToday {
-  background-color: rgba(245, 113, 112, 0.2);
+  background-color: rgba(194, 138, 48, 0.2);
 }
 .c-cal__cel.isToday p {
-  background: rgba(245, 113, 112, 0.4);
+  background: rgba(243, 171, 63, 0.4);
 }
 .c-cal__cel.other_month {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(189, 130, 82, 0.2);
 }
 .event:before {
   position: absolute;
