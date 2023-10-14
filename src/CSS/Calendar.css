@@ -554,3 +554,7 @@ input {
   text-align: center;
   padding-top: 15px;
 }
+
+html {
+  background-color: var(--celadon);
+}
