@@ -116,8 +116,9 @@ a {
 header {
   position: absolute;
   height: 80px;
-  width: 100%;
+  width: 1478px;
   z-index: 50;
+  border-radius: 5px;
   background-color: var(--mint);
 }
 header > .wrapper {
