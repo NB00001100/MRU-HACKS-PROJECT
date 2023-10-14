@@ -41,10 +41,11 @@ h4{
     margin-left: 10px;
 }
 
-.log{
+
+#log{
     text-decoration: none;
-    
 }
+
 html{
     margin: auto;
     background-color: var(--mint);
