@@ -4,51 +4,143 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/skeletonstyle.css">
     <link rel="stylesheet" href="CSS/mru-garden-blog.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>MRU Garden Blog</title>
+    <title>Garden Blogs</title>
 </head>
 
-<body>
-    <div class='main-content'>
-        <div class="wrapper">
-            <h1 class='latest'> MRU Garden Blog</h1>
-            <div class="latest-grid">
-                <div class="latest-grid-item one">
-                    <img src="Images/mru_logo.jpg">
-                    <h2>"Post 1"</h2>
-                    <h3>1/2/2017</h3>
-                    <hr />
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis impedit illo velit tempore
-                        repudiandae officia.
-                    </p>
-                    <a href="mru-garden-blog.html"><button>Open Blog</button></a>
-                </div>
-                <div class="latest-grid-item">
-                    <img src="https://source.unsplash.com/collection/887284/1600x909">
-                    <h2>"Post 2"</h2>
-                    <h3>1/2/2017</h3>
-                    <hr />
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis impedit illo velit tempore
-                        repudiandae officia.
-                    </p>
-                    <button>Open Blog</button>
-                </div>
-                <div class="latest-grid-item">
-                    <img src="https://source.unsplash.com/collection/887284/1600x907">
-                    <h2>"Post 3"</h2>
-                    <h3>1/2/2017</h3>
-                    <hr />
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis impedit illo velit tempore
-                        repudiandae officia.
-                    </p>
-                    <button>Open Blog</button>
+<p class = "logo">
+    <img src = "../Images/growshare-high-resolution-logo-color-on-transparent-background.png" width ="130" height = "130">
+</p>
+<br>
+<nav class="navbar navbar-expand-lg navbar-custom rounded">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Gardens
+            </a>
+            <div class="dropdown-menu" aria-labelledby="accountDropdown">
+                <a class="dropdown-item" href="#">My Gardens</a>
+                <a class="dropdown-item" href="#">Find Gardens</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Blog
+            </a>
+            <div class="dropdown-menu" aria-labelledby="blogDropdown">
+                <a class="dropdown-item" href="#">Latest Posts</a>
+                <a class="dropdown-item" href="#">My Blogs </a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Account</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="wrap">
+    <aside class="sidebar">
+
+        <div class="widget">
+            <h2>Search</h2>
+            <div class="wrapp">
+                <div class="search">
+                    <input type="text" placeholder="What are you looking for?" class="searchTerm">
+                    <input type="submit" class="searchButton">
+                    <div style="clear: both;">
+                    </div>
                 </div>
             </div>
         </div>
-</body>
 
-</html>
+        <div class="widget">
+            <h2>MRU Community Garden</h2>
+            <p>Hello, my name’s Michael. I’m 20 years old. I live in São Paulo (Brazil). I work as a Web Designer.<br>
+                maycoualmeida@gmail.com</p>
+        </div>
+    </aside>
+    <div class="blog">
+        <div class="conteudo">
+            <div class="post-info">
+                <h1> Lorem Ipsum Dolor </h1>
+                Posted by Michael
+            </div>
+            <img src="http://ns2.techstream.org/images/Core-Principles-of-Flat-Design.jpg">
+            <hr>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+
+            <a href="#" class="continue-lendo">Read more →</a>
+        </div>
+        <div class="conteudo">
+            <div class="post-info">
+                <h1> Lorem Ipsum Dolor </h1>
+                Posted by Michael
+            </div>
+            <img src="https://designculture.com.br/wp-content/uploads/2013/07/14.-flat-design.jpg">
+            <hr>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+            <a href="#" class="continue-lendo">Read more →</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <hr>
+    <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-snapchat"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    <ul class="foot">
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">About</a>
+        </li>
+        <li>
+            <a href="#">Terms</a>
+        </li>
+        <li>
+            <a href="#">Privacy Policy</a>
+        </li>
+    </ul>
+    <p class="copyright">
+        gangies @ 2023
+    </p>
+</footer>

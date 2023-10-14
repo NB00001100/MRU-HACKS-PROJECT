@@ -1,97 +1,162 @@
-/* Code modified from https://codepen.io/gf117/pen/MEWWWz */
-@import url('palette.css');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
-* {
-  margin: 0;
-  padding: 0;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+.sidebar {
+  width:275px;
+  float: left;
+  background-color: var(--mint);
+  margin: 5px 0px 0px 5px;
 }
 
-h1,h2,h3 {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #f5f5f5;
+.sidebar .widget {
+
+  margin:0 0 25px;
+  background-color: #f5f5f5;
+  transition: all 0.5s ease;
+  border-bottom: 2px solid #fff;
+  border-radius: 15px;
 }
 
-body {
-  border-left: 10px solid var(--zomp-2);
-  border-right: 10px solid var(--zomp-2);
+.sidebar .widget:hover {
+  border-bottom: 2px solid #3498db;
 }
 
-.main-content {
-    background-color: var(--mint);
+.sidebar .widget h2 {
+  margin:0 0 15px;
+  padding:15px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight:800;
+  color: white;
+  background-color: var(--viridian);
+  border-radius: 15px;
 }
 
-.latest-grid-item {
-    background-color: var(--caribbean-current);
-}
-
-li,a,button {
-  font-family: 'Work Sans';
+.sidebar .widget p {
+  font-size: 14px;
   color: black;
+  padding: 15px;
+}
+
+.sidebar .widget p:last-child {
+  margin:0;
+}
+
+.blog {
+  background-color: var(--mint);
+  padding-top: 5px;
+}
+
+.post-info {
+  background-color: var(--viridian);
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.conteudo {
+  width:600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background: #fff;
+  border-radius: 15px;
+  border: 2px solid var(--zomp-2);
+}
+
+.conteudo img {
+  width: 550px;
+  margin: auto;
+}
+
+.conteudo h1 {
+  margin:0 0 15px;
+  font-family: Georgia;
+  font-weight: normal;
+}
+
+.conteudo p {
+  padding: 15px;
+}
+
+.conteudo p:last-child {
+  margin: 0;
+}
+
+.conteudo .continue-lendo {
+  padding: 15px;
+  background-color: var(--viridian);
+  border-radius: 15px;
+  color: white;
+  font-weight: 700; 
   text-decoration: none;
-  list-style: none;
+  margin-left:10px;
+  transition: all 0.5s ease;
 }
 
-p {
-    color: #f5f5f5;
+.conteudo .continue-lendo:hover {
+  margin-left:20px;
 }
 
-button {
-  border-radius: none;
-  padding: 5px 20px;
-  background: white;
-  border: 2px solid black;
-  font-size: 1.1rem;
-
-}
-
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.latest-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.latest-grid-item {
-  flex-basis: calc(30% - 10px);
-  margin: 20px 0;
-  border: 2px solid black;
-  border-radius: 5px;
-}
-
-.latest-grid-item h2,h3,p,hr,button {
-  margin: 1rem ;
-}
-
-.latest-grid-item h3 {
-  color: #aaa;
-}
-
-.latest-grid-item img {
-  width: 100%;
-  height: 200px;
-}
-
-.latest {
-  text-align: center;
-  font-size: 3rem;
-  padding: 2rem;
+.post-info {
+  margin: -10px 0 15px;
+  font-size: 12px;
   text-transform: uppercase;
 }
 
-@media (max-width: 900px) {
-  .latest-grid-item {
-      flex-basis: calc(45% - 10px);
-  }
+.search {
+  clear: both;
+  width: 100%;
+  position: relative
 }
 
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
 
-@media (max-width: 550px) {
-  .latest-grid-item {
-      flex-basis: 100%;
-  }
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  position: absolute;
+  right: -50px;
+  width: 40px;
+  height: 36px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.search:before {
+  position: absolute;
+  right: -50px;
+  width: 40px;
+  height: 36px;
+  line-height: 36px;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  font-family: 'FontAwesome';
+  content: '\f002';
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrapp{
+  width: 50%;
+  margin: 10% auto;
+}
+
+footer {
+  margin-top: 20px;
 }
