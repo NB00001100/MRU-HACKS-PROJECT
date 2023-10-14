@@ -54,6 +54,9 @@
   color: white;
   padding: 15px;
   border-radius: 15px;
+  margin: -10px 0 15px;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .conteudo {
@@ -99,12 +102,6 @@
 
 .conteudo .continue-lendo:hover {
   margin-left:20px;
-}
-
-.post-info {
-  margin: -10px 0 15px;
-  font-size: 12px;
-  text-transform: uppercase;
 }
 
 .search {
