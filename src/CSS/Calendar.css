@@ -559,3 +559,6 @@ input {
 html {
   background-color: var(--celadon);
 }
+#add-event{
+  text-decoration: none;
+}
