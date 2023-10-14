@@ -1,79 +1,97 @@
-@import url(./palette.css);
+/* Code modified from https://codepen.io/gf117/pen/MEWWWz */
+@import url('palette.css');
 
-/* Reset some default styles for consistency */
-body, h1, h2, p, a {
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3 {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #f5f5f5;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: var(--celadon); /* Background color */
+  border-left: 10px solid var(--zomp-2);
+  border-right: 10px solid var(--zomp-2);
 }
 
-header {
-    background-color: var(--mint); /* Green header background color */
-    color: var(--caribbean-current); /* White text color */
-    text-align: center;
-    padding: 20px 0;
+.main-content {
+    background-color: var(--mint);
 }
 
-nav {
-    background-color: var(--zomp); /* Dark background for the navigation */
-    color: var(--caribbean-current); /* White text color */
-    padding: 10px;
-    text-align: center;
+.latest-grid-item {
+    background-color: var(--caribbean-current);
 }
 
-nav a {
-    color: var(--caribbean-current); /* White text color for navigation links */
-    text-decoration: none;
-    margin: 0 10px;
+li,a,button {
+  font-family: 'Work Sans';
+  color: black;
+  text-decoration: none;
+  list-style: none;
 }
 
-main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: var(--celadon-2); /* Content background color */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+p {
+    color: #f5f5f5;
 }
 
-.search-bar {
-    margin-bottom: 20px;
+button {
+  border-radius: none;
+  padding: 5px 20px;
+  background: white;
+  border: 2px solid black;
+  font-size: 1.1rem;
+
 }
 
-.search-bar input[type="text"] {
-    width: 70%;
-    padding: 5px;
-    border: 1px solid var(--zomp);
-    border-radius: 5px;
-    outline: none;
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
 }
 
-.search-bar button {
-    background-color: var(--zomp); /* Button background color */
-    color: var(--caribbean-current); /* White text color for the button */
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin-left: 10px;
-    cursor: pointer;
+.latest-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.blog-post {
-    margin-bottom: 20px;
-    border: 1px solid var(--mint-2); /* Blog post border color */
-    padding: 10px;
+.latest-grid-item {
+  flex-basis: calc(30% - 10px);
+  margin: 20px 0;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
-.blog-post h2 {
-    font-size: 24px;
-    margin-bottom: 5px;
+.latest-grid-item h2,h3,p,hr,button {
+  margin: 1rem ;
 }
 
-.blog-post p {
-    font-size: 14px;
-    color: var(--skobeloff); /* Text color for blog post content */
-    margin: 5px 0;
+.latest-grid-item h3 {
+  color: #aaa;
+}
+
+.latest-grid-item img {
+  width: 100%;
+  height: 200px;
+}
+
+.latest {
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .latest-grid-item {
+      flex-basis: calc(45% - 10px);
+  }
+}
+
+
+@media (max-width: 550px) {
+  .latest-grid-item {
+      flex-basis: 100%;
+  }
 }
