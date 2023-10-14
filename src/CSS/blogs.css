@@ -2,7 +2,7 @@
 @import url('palette.css');
 
 * {
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 h1,h2,h3 {
@@ -35,7 +35,7 @@ button {
   background-color: var(--viridian);
   color: #f5f5f5;
   border: 2px solid var(--zomp-2);
-  border-radius: 25px;
+  border-radius: 15px;
   font-size: 1.1rem;
 }
 
