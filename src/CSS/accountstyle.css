@@ -1,0 +1,57 @@
+@import url(palette.css);
+
+h1 {
+    padding-top: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 0;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    padding-top: 8px;
+    display: inline-block;
+    text-align: center;
+    font-size: 60px;
+    border: 3px solid grey;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.accli {
+    display: inline-block;
+}
+
+.accli .li:first-child {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.accli li{
+    list-style-type: none;
+    
+}
+.user {
+    font-weight: bold;
+    font-size: 24px;
+}
+.email {
+    font-style: italic;
+}
+
+.acc1{
+    border: 5px dashed var(--pine-green);
+    border-radius: 10px;
+    width: fit-content;
+    padding: 3%;
+}
+
+.uid {
+    font-weight: 300;
+    font-size: 32px;
+}
