@@ -1,108 +1,57 @@
 @import url(CSS/palette.css);
 
 html{
+    margin-left: 5px;
     position: absolute;
+    background-color: white;
     width: 1440px;
-    height: 1280px; 
+    height: 900px; 
+}
+
+body {
+    background-color: var(--celadon);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 h1 {
-    text-align: center;
     font-size: 128px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #FEFAE0;
 }
-nav {
+
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-    background-color: #283618;
-}
-
-.navbar .nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.navbar .dropdown-submenu {
-    position: relative;
-}
-
-.navbar .dropdown-submenu .dropdown-menu {
-    top: 0;
-    left: 100%;
-}
-
-.navbar-title {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.navbar-nav {
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
+    color: white;
     
 }
 
- /* Navigation Bar styles */
- .navbar {
-    background-color: #27e456;
-}
-
-.navbar-brand {
-    padding-left: 30px;
-    font-size: 128px;
-    text-align: center;
-    color: #FEFAE0;
-}
-
-.navbar-nav .nav-link {
-    color: #FEFAE0;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #DDA15E;
-}
-
-.dropdown-menu {
-    background-color: #606C38;
-}
-
-.dropdown-item {
-    color: #FEFAE0;
-}
-
-.dropdown-item:hover {
-    background-color: #283618;
-    color: #FEFAE0;
-}
-
-/* Carousel styles */
-.carousel {
-    background-color: #FEFAE0;
-}
-
-/* Card styles */
-.card {
-    background-color: #FEFAE0;
-}
-
-/* Button styles */
-.btn-primary {
-    background-color: #BC6C25;
-    border-color: #BC6C25;
-}
-
-.btn-primary:hover {
-    background-color: #DDA15E;
-    border-color: #DDA15E;
-}
-
-/* Body background color */
-body {
-    background-color: var(--celadon);
-}
-
 #carouselExample {
-    margin-left: 25%;
-    text-align: center;
-    width: 50%
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 5px;
 }
+
+.sidebar {
+    width: 25%;
+    background-color: var(--mint);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+}
+
+.logo:first-child{
+    text-align: center;
+}
+
+.logo {
+    padding-top: 20px;
+}
+
+.carousel-inner{
+    border-radius: 10px;
+}
+
