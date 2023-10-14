@@ -1,0 +1,70 @@
+@import url(palette.css);
+
+html{
+    background-color: white;
+    width: auto;
+    height: 900px; 
+    margin:auto;    
+}
+
+body {
+    background-color: var(--celadon);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+.logo:first-child{
+    text-align: center;
+}
+
+.logo {
+    padding-top: 20px;
+}
+
+
+
+.navbar-custom {
+    background-color: var(--mint);
+}
+
+a {
+    color: white;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 40px 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+
+}
+
+.social{
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 36px;
+}
+.social a{
+    margin: 0 16px;
+}
+
+.foot {
+    margin-left: 465px;
+}
+.foot li{
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+    padding-left: 30px;
+}
+
+.copyright {
+    color:aliceblue;
+    text-align: center;
+    padding-top: 15px;
+}
+
