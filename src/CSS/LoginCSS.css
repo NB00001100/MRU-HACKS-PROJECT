@@ -47,7 +47,11 @@ h4{
 }
 html{
     margin: auto;
-    background-color: url(--mint);
+    background-color: var(--mint);
     width: auto;
     height: auto;
+}
+
+section {
+    background-color: var(--mint);
 }
