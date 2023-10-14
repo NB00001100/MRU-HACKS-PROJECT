@@ -9,7 +9,6 @@ h2 {
     font-style: italic;
     margin-top: 0;
     padding-left: 15px;
-    padding-bottom: 10px;
 }
 
 h3 {
@@ -42,16 +41,76 @@ h3 {
 }
 .email {
     font-style: italic;
+    padding-bottom: 10px;
 }
 
 .acc1{
     border: 5px dashed var(--pine-green);
     border-radius: 10px;
     width: fit-content;
-    padding: 3%;
+    padding: 40px;
+    display: inline-block;
 }
 
 .uid {
     font-weight: 300;
-    font-size: 32px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.norm {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.acc2{
+    border: 5px dashed var(--pine-green);
+    border-radius: 10px;
+    width: fit-content;
+    padding: 3%;
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+    padding-left: 20px;
+    margin-right: 50px;
+    margin-left: 200px;
+    top: 15px;
+}
+
+.acc2 li{
+    list-style-type: none;
+    color: black;
+}
+
+button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-color: var(--pine-green);
+    background-color: var(--mint);
+    color: aliceblue;
+}
+button:active{
+    background-color: var(--pine-green);
+    border-color: var(--mint);
+    color: black;
+}
+
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1%;
+}
+
+h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+button:nth-child(2){
+    display: inline-block;
 }
