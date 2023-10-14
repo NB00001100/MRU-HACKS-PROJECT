@@ -1,3 +1,4 @@
+@import url(palette.css);
 .gradient-custom-2 {
     /* fallback for old browsers */
     background: #99E2B4;
@@ -43,4 +44,14 @@ h4{
 .log{
     text-decoration: none;
     
+}
+html{
+    margin: auto;
+    background-color: var(--mint);
+    width: auto;
+    height: auto;
+}
+
+section {
+    background-color: var(--mint);
 }
