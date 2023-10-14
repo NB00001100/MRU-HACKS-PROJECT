@@ -1,70 +1,38 @@
-@import url(palette.css);
-
-html{
-    background-color: white;
-    width: auto;
-    height: 900px; 
-    margin:auto;    
+.container{
+    margin-top: 10px;
 }
-
-body {
-    background-color: var(--celadon);
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
-
-
-
-.logo:first-child{
-    text-align: center;
-}
-
-.logo {
-    padding-top: 20px;
-}
-
-
-
-.navbar-custom {
+.list-of-places{
+    
+    
     background-color: var(--mint);
+    padding-bottom: 20px;
+    border-radius: 10px;
 }
+.list-of-places h2{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.list-of-places li{
 
-a {
-    color: white;
+    font-size:large;
+    margin-top: 10px;
 }
+.form-for-garden{
+    background-color: var(--mint);
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+#button-for-garden{
+    background-color: var(--celadon);
+}
+.find-gardens h1{
 
-footer {
-    margin-top: 20px;
-    padding: 40px 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
+    padding-top: 20px;
+    padding-left: 50px;
 
 }
-
-.social{
-    text-align: center;
-    padding-bottom: 25px;
-    font-size: 36px;
+#h3-find-garden{
+    padding-left: 20px;
+    padding-top: 10px;
 }
-.social a{
-    margin: 0 16px;
-}
-
-.foot {
-    margin-left: 465px;
-}
-.foot li{
-    display: inline-block;
-    list-style-type: none;
-    text-align: center;
-    padding-left: 30px;
-}
-
-.copyright {
-    color:aliceblue;
-    text-align: center;
-    padding-top: 15px;
-}
-
