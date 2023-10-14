@@ -116,8 +116,9 @@ a {
 header {
   position: absolute;
   height: 80px;
-  width: 100%;
+  width: 98%;
   z-index: 50;
+  border-radius: 5px;
   background-color: var(--mint);
 }
 header > .wrapper {
@@ -131,13 +132,11 @@ header > .wrapper {
   color: #ffffff;
   letter-spacing: 2px;
   font-size: 13px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 header > .wrapper a {
   color: #ffffff;
   text-decoration: none;
   margin-left: 10px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .c-monthyear {
   display: flex;
@@ -358,7 +357,6 @@ header > .wrapper a {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #ffffff;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .c-cal__cel {
   position: relative;
@@ -370,7 +368,6 @@ header > .wrapper a {
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   color: #ffffff;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .c-cal__cel p {
   position: absolute;
@@ -453,10 +450,8 @@ header > .wrapper a {
   font-size: 28px;
   margin: 50px 0;
   color: #ffffff;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .c-aside__day .c-aside__num {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #ffffff;
 }
 .c-aside__event {
@@ -464,7 +459,6 @@ header > .wrapper a {
   padding-left: 20px;
   margin: 20px 0;
   color: #ffffff;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .c-aside__event:before {
   position: absolute;
@@ -552,8 +546,19 @@ textarea::-ms-expand,
 select::-ms-expand {
   display: none;
   color: #ffffff;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 input {
   height: 40px;
+}
+
+#logo {
+  text-align: center;
+  padding-top: 15px;
+}
+
+html {
+  background-color: var(--celadon);
+}
+#add-event{
+  text-decoration: none;
 }
